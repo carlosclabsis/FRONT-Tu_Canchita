@@ -1,0 +1,325 @@
+
+
+<div class="main-wrapper">
+  
+    <!-- Dashboard header -->
+    <!-- <section class="navbar-dashboard-area">
+      <nav class="navbar navbar-default lightHeader navbar-dashboard" role="navigation">
+        <div class="container">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <!-- <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-dash">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+           Collect the nav links, forms, and other content for toggling 
+          <div class="collapse navbar-collapse navbar-dash">
+            <ul class="nav navbar-nav mr0">
+              <li class="">
+                <a href="dashboard.html"><i class="fa fa-tachometer icon-dash" aria-hidden="true"></i> Dashboard</a>
+              </li>
+              <li class="dropdown singleDro active">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-ul icon-dash" aria-hidden="true"></i> Listings <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="listings.html">My Listings</a></li>
+                  <li><a href="add-listings.html">Add Listings</a></li>
+                  <li><a href="edit-listings.html">My Listings</a></li>
+                 </ul>
+              </li>
+              <li class="">
+                <a href="dashboard-reviews.html" class="scrolling"><i class="fa fa-star-o icon-dash" aria-hidden="true"></i> Reviews</a>
+              </li>
+              <li class="">
+                <a href="oders.html"><i class="fa fa-cogs icon-dash" aria-hidden="true"></i> Orders</a>
+              </li>
+              <li>
+                <a href="dashboard.html#message" class="scrolling">
+                  <i class="fa fa-envelope icon-dash" aria-hidden="true"> </i>
+                  Messages</a>
+              </li>
+              <li class="">
+                <a href="profile.html"><i class="fa fa-user icon-dash" aria-hidden="true"></i> Personal Details</a>
+              </li>
+            </ul>
+            <div class="row adjustRow">
+              <div class="pull-right col-xs-12 col-sm-2">
+                <form class="navbar-form" role="search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"><i class="icon-listy icon-search-2"></i></button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section> --> 
+
+
+<!-- Dashboard breadcrumb section -->
+<div class="section dashboard-breadcrumb-section bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Reserva tu Canchita</h2>
+        <ol class="breadcrumb">
+          <li><a [routerLink]="['']">Inicio</a></li>
+          <!-- <li><a href="dashboard.html">Dashboard</a></li> -->
+          <li class="active">Reserva</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- DASHBOARD ORDERS SECTION -->
+<section class="clearfix bg-dark listingSection" id="listing-add-edit">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				
+				<form action="#" method="" class="listing__form">				
+
+					<div class="dashboardBoxBg mb30">
+						<div class="profileIntro paraMargin">
+							<h3>Reserva</h3>
+							<p>Busca Tu Canchita en tu localidad o zona preferida y preparate para la Pichanga.</p>
+							<div class="row">
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="listingCategory">Departamento</label>
+									<div class="contactSelect">
+										<select name="guiest_id9" id="departamento" class="select-drop">
+											<option value="0">Todos los departamentos</option>
+											<option value="1">Arequipa</option>
+											<option value="2">Lima</option>
+											<option value="3">Cusco</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="listingCategory">Provincia</label>
+									<div class="contactSelect">
+										<select name="guiest_id9" id="provincia" class="select-drop">
+											<option value="0">Todas las provincias</option>
+											<option value="1">Arequipa</option>
+											<option value="2">Islay</option>
+											<option value="3">Condesuyos</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group col-xs-12">
+									<label for="listingCategory">Distrito</label>
+									<div class="contactSelect">
+										<select name="guiest_id9" id="distrito" class="select-drop">
+											<option value="0">Todos los distritos</option>
+											<option value="1">J.L.B. y R.</option>
+											<option value="2">Cercado</option>
+											<option value="3">Cayma</option>
+										</select>
+									</div>
+								</div>
+								<hr>
+								<div class="form-group col-xs-6">
+									<label for="listingCategory">Local</label>
+									<div class="contactSelect">
+										<select name="guiest_id9" id="local" class="select-drop">
+											<!-- <option value="0">Locales</option> -->
+											<option value="1">Jarawa</option>
+											<option value="2">El Coloso</option>
+											<option value="3">Los Palitos</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group col-xs-6">
+									<label for="listingCategory">Cancha</label>
+									<div class="contactSelect">
+										<select name="guiest_id9" id="cancha" class="select-drop">
+											<!-- <option value="0">Locales</option> -->
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="dashboardBoxBg mb30">
+						<div class="profileIntro paraMargin">
+							<h3>Horarios</h3>
+							<p>Elige el horario mas comodo tu gente y confirma Tu Pichanga.</p>
+							<div class="row">
+								<!-- <div class="form-group col-sm-6 col-xs-12">
+									<label for="listingRegion">Listing Region</label>
+									<div class="contactSelect">
+										<select name="guiest_id19" id="guiest_id19" class="select-drop">
+											<option value="0">All Region</option>
+											<option value="1">London</option>
+											<option value="2">Canada</option>
+											<option value="3">New York</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="listingAddress">Listing Address</label>
+									<input type="text" class="form-control" id="listingAddress" placeholder="Type Location">
+								</div>
+
+								<div class="form-group col-sm-6 col-sm-push-6 col-xs-12">
+									<div class="mapArea clearfix">
+										<div id="map-add-edit"></div>
+										<span class="help-block">Enter the exact address or click on the map. <strong>Location: <span id="location">(..., ...)</span> </strong></span>
+									</div>
+								</div>
+
+								<div class="form-group col-sm-6 col-sm-pull-6 col-xs-12">
+									<label for="listingPhone">Listing Phone</label>
+									<input type="text" class="form-control" id="listingPhone" placeholder="546 - 545 - 2546">
+								</div>
+
+								<div class="form-group col-sm-6 col-sm-pull-6 col-xs-12">
+									<label for="listingEmail">Listing Email</label>
+									<input type="text" class="form-control" id="listingEmail" placeholder="hello@example.com">
+								</div>
+
+								<div class="form-group col-sm-6 col-sm-pull-6 col-xs-12">
+									<label for="listingWebsite">Listing Website</label>
+									<input type="text" class="form-control" id="listingWebsite" placeholder="http://">
+								</div> -->
+								<div class="form-group col-sm-6 col-sm-pull-6 col-xs-12">
+										<label>Aqui va el Horario de cada cancha. Por Semanas</label>
+										
+									</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="dashboardBoxBg mb30">
+						<div class="profileIntro paraMargin">
+							<h3>Gallery</h3>
+							<p>We are not responsible for any damages caused by the use of this website, or by posting business listings here. Please use our site at your own discretion and exercise good judgement as well as common sense when advertising business here.</p>
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<div class="imageUploader text-center">
+										<div class="file-upload">
+											<div class="upload-area">
+												<input type="file" name="img[]" class="file">
+												<button class="browse" type="button">Click or Drag images here</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group col-xs-12">
+									<label for="videoUrl">Video URL</label>
+									<input type="text" class="form-control" id="videoUrl" placeholder="http://">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="dashboardBoxBg mb30">
+						<div class="profileIntro paraMargin">
+							<h3>Social</h3>
+							<p>We are not responsible for any damages caused by the use of this website, or by posting business listings here. Please use our site at your own discretion and exercise good judgement as well as common sense when advertising business here.</p>
+							<div class="row">
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="linkedUrl">Linked in URL</label>
+									<input type="text" class="form-control" id="linkedUrl" placeholder="http://linkedin.com/listty">
+								</div>
+
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="facebookUrl">Facebook URL</label>
+									<input type="text" class="form-control" id="facebookUrl" placeholder="http://facebook.com/listty">
+								</div>
+
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="twitterUrl">Twitter URL</label>
+									<input type="text" class="form-control" id="twitterUrl" placeholder="http://twitter.com/listty">
+								</div>
+
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="youtubeUrl">You Tube URL</label>
+									<input type="text" class="form-control" id="youtubeUrl" placeholder="http://youtube.com/listty">
+								</div>
+							</div>
+						</div>
+					</div> -->
+					
+					<div class="dashboardBoxBg mb30">
+						<div class="profileIntro paraMargin">
+							<h3>Opening Hours</h3>
+							<p>Example: 10.00am - 5.00pm or 10.00 - 17.00</p>
+							<div class="row">
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="mondayTime">Monday</label>
+									<input type="text" class="form-control" id="mondayTime" placeholder="10.00am - 5.00pm">
+								</div>
+
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="tuesdayTime">Tuesday</label>
+									<input type="text" class="form-control" id="tuesdayTime" placeholder="10.00am - 5.00pm">
+								</div>
+
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="wednesdayTime">Wednesday</label>
+									<input type="text" class="form-control" id="wednesdayTime" placeholder="10.00am - 5.00pm">
+								</div>
+
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="thrusdayTime">Thrusday</label>
+									<input type="text" class="form-control" id="thrusdayTime" placeholder="10.00am - 5.00pm">
+								</div>
+
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="fridayTime">Friday</label>
+									<input type="text" class="form-control" id="fridayTime" placeholder="10.00am - 5.00pm">
+								</div>
+
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="saturdayTime">Saturday</label>
+									<input type="text" class="form-control" id="saturdayTime" placeholder="10.00am - 5.00pm">
+								</div>
+
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="sundayTime">Sunday</label>
+									<input type="text" class="form-control" id="sundayTime" placeholder="Closed">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-footer text-center">
+						<button type="submit" class="btn-submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer class="copyRightDashboard">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>Copyright © 2016. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</div>
+  
+
+

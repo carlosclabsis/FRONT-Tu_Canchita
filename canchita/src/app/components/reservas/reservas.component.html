@@ -1,8 +1,5 @@
 
-
-
-    <!-- HEADER -->
-    
+<div>  
     <!-- Dashboard header -->
     <section class="navbar-dashboard-area">
       <nav class="navbar navbar-default lightHeader navbar-dashboard" role="navigation">
@@ -21,7 +18,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-dash">
             <ul class="nav navbar-nav mr0">
-              <li class="">
+              <!-- <li class="">
                 <a href="dashboard.html"><i class="fa fa-tachometer icon-dash" aria-hidden="true"></i> Dashboard</a>
               </li>
               <li class="dropdown singleDro ">
@@ -31,21 +28,22 @@
                   <li><a href="add-listings.html">Add Listings</a></li>
                   <li><a href="edit-listings.html">My Listings</a></li>
                 </ul>
-              </li>
-              <li class="">
+              </li> -->
+              <!-- <li class="">
                 <a href="dashboard-reviews.html" class="scrolling"><i class="fa fa-star-o icon-dash" aria-hidden="true"></i> Reviews</a>
-              </li>
-              <li class="active">
-                <a href="oders.html"><i class="fa fa-cogs icon-dash" aria-hidden="true"></i> Orders</a>
+              </li>-->
+              <li class="active"> 
+                <a [routerLink]="['/reservas']"><i class="fa fa-cogs icon-dash" aria-hidden="true"></i> Reservas</a>
               </li>
               <li>
-                <a href="dashboard.html#message" class="scrolling">
+                <a [routerLink]="['/mensajes']" class="scrolling">
                   <i class="fa fa-envelope icon-dash" aria-hidden="true"> </i>
-                  Messages</a>
+				  Mensajes</a>
+				  <!-- <a  class="nav-link">Inicio</a> -->
               </li>
-              <li class="">
+              <!-- <li class="">
                 <a href="profile.html"><i class="fa fa-user icon-dash" aria-hidden="true"></i> Personal Details</a>
-              </li>
+              </li> -->
             </ul>
             <div class="row adjustRow">
               <div class="pull-right col-xs-12 col-sm-2">
@@ -70,11 +68,11 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2>Orders</h2>
+        <h2>Reservas</h2>
         <ol class="breadcrumb">
-          <li><a href="index-2.html">Home</a></li>
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li class="active">Orders</li>
+          <li><a [routerLink]="['']" class="nav-link">Inicio</a></li>
+          <!-- <li><a href="dashboard.html">Dashboard</a></li> -->
+          <li class="active">Reservas</li>
         </ol>
       </div>
     </div>
@@ -628,3 +626,4 @@
       </div>
     </footer>
   
+</div> 

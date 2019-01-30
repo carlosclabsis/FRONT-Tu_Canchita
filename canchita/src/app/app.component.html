@@ -44,7 +44,7 @@
                     <!-- <li><a class="" href="index-3.html">Locales</a></li> -->
                     <li><a [routerLink]="['/lista']" class="nav-link">Locales</a></li>
                     <li><a [routerLink]="['/concurridos']" class="nav-link">Mas concurridos</a></li>
-                    <li><a [routerLink]="['/reservas']" class="nav-link">Reservaciones</a></li>
+                    <li><a [routerLink]="['/reservas']" class="nav-link">Todas las reservas</a></li>
                   </ul>
                 </li>
                 <li class=" dropdown megaDropMenu">
@@ -96,7 +96,7 @@
                     <li><a href="comming-soon.html">Proximamente</a></li>
                   </ul>
                 </li>
-                <li class=""><a href="blog.html">blog </a></li>
+                <!-- <li class=""><a href="blog.html">blog </a></li> -->
                 <li class=" dropdown singleDrop">
                   <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                   <ul class="dropdown-menu">
@@ -115,7 +115,8 @@
                 </li>
               </ul>
           </div>
-          <a class="btn btn-default navbar-btn" href="add-listings.html"> + <span>Reserva</span></a>
+          <a class="btn btn-default navbar-btn" [routerLink]="['/nueva-reserva']"> + <span>Reserva</span></a>
+          <!-- <a [routerLink]="['/lista']" class="nav-link">Locales</a> -->
         </div>
       </nav>
     </div>

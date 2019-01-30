@@ -6,6 +6,9 @@ import { ListaComponent } from './components/lista/lista.component';
 import { GrillaComponent} from './components/grilla/grilla.component';
 import { ConcurridosComponent} from './components/concurridos/concurridos.component';
 import { ReservasComponent} from './components/reservas/reservas.component';
+import { MensajesComponent} from './components/mensajes/mensajes.component';
+import { NuevaReservaComponent} from './components/nueva-reserva/nueva-reserva.component';
+
 
 
 
@@ -25,6 +28,14 @@ const appRoutes:Routes = [
     {
         path: 'reservas',
         component: ReservasComponent
+    },
+    {
+        path: 'mensajes',
+        component: MensajesComponent
+    },
+    {
+        path: 'nueva-reserva',
+        component: NuevaReservaComponent
     }
 ]
 
