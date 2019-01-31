@@ -89,7 +89,7 @@
 				
 				<form action="#" method="" class="listing__form">				
 
-					<div class="dashboardBoxBg mb30">
+					<div class="dashboardBoxBg mb30 fondo">
 						<div class="profileIntro paraMargin">
 							<h3>Reserva</h3>
 							<p>Busca Tu Canchita en tu localidad o zona preferida y preparate para la Pichanga.</p>
@@ -154,7 +154,7 @@
 						</div>
 					</div>
 
-					<div class="dashboardBoxBg mb30">
+					<div class="dashboardBoxBg mb30 fondo">
 						<div class="profileIntro paraMargin">
 							<h3>Horarios</h3>
 							<p>Elige el horario mas comodo tu gente y confirma Tu Pichanga.</p>
@@ -197,32 +197,106 @@
 									<input type="text" class="form-control" id="listingWebsite" placeholder="http://">
 								</div> -->
 								<div class="form-group col-sm-6 col-sm-pull-6 col-xs-12">
-										<label>Aqui va el Horario de cada cancha. Por Semanas</label>
+									
+													aqui va el formulario de tarjetas de credito
+											
+													La hora de tu Pichanga
 										
-									</div>
+										
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="dashboardBoxBg mb30">
+
+					<div class="dashboardBoxBg mb30 fondo">
 						<div class="profileIntro paraMargin">
-							<h3>Gallery</h3>
-							<p>We are not responsible for any damages caused by the use of this website, or by posting business listings here. Please use our site at your own discretion and exercise good judgement as well as common sense when advertising business here.</p>
+							<h3>Realiza tu pago</h3>
+							<p>Realiza tu pago total o adelanto y no dejes que te madruguen Tu Canchita.</p>
 							<div class="row">
-								<div class="form-group col-xs-12">
-									<div class="imageUploader text-center">
-										<div class="file-upload">
-											<div class="upload-area">
-												<input type="file" name="img[]" class="file">
-												<button class="browse" type="button">Click or Drag images here</button>
+								<div class="container-fluid">
+									
+									<div class="creditCardForm">
+											
+											<div class="payment">
+													<form>
+															<div class="form-group owner col-xs-8">
+																	<label for="owner">Nombre de Propietario</label>
+																	<input type="text" class="form-control" id="owner">
+															</div>
+															<div class="form-group CVV col-xs-4">
+																	<label for="cvv">CVV</label>
+																	<input type="text" class="form-control" id="cvv">
+															</div>
+															<div class="form-group col-xs-12" id="card-number-field">
+																	<label for="cardNumber">Numero de Tarjeta</label>
+																	<input type="text" class="form-control" id="cardNumber">
+															</div>
+															<div >
+																	<div class="col-xs-12">
+																			<label>Fecha de Expiracion</label>
+																	</div>
+																	
+																	<div class="contactSelect col-sm-6 col-md-6 col-lg-4 " >
+																		<select class="select-drop">
+																				<option value="01">Enero</option>
+																				<option value="02">February </option>
+																				<option value="03">March</option>
+																				<option value="04">April</option>
+																				<option value="05">May</option>
+																				<option value="06">June</option>
+																				<option value="07">July</option>
+																				<option value="08">August</option>
+																				<option value="09">September</option>
+																				<option value="10">October</option>
+																				<option value="11">November</option>
+																				<option value="12">December</option>
+																		</select>
+																	</div>
+																	<div class="form-group contactSelect col-sm-6 col-md-6 col-lg-4">
+																		<select class="select-drop">
+																				<option value="16"> 2016</option>
+																				<option value="17"> 2017</option>
+																				<option value="18"> 2018</option>
+																				<option value="19"> 2019</option>
+																				<option value="20"> 2020</option>
+																				<option value="21"> 2021</option>
+																		</select>
+																	</div>
+																	<div class="form-group col-sm-12 col-md-12 col-lg-4">
+																		<img src="assets/img/visa.jpg" id="visa">
+																		<img src="assets/img/mastercard.jpg" id="mastercard">
+																		<img src="assets/img/amex.jpg" id="amex">
+																</div>
+															</div>
+															<div class="form-footer text-center col-sm-12">
+																	<button type="submit" class="btn btnCard">Confirmar</button>
+																</div>
+															
+													</form>
 											</div>
-										</div>
+									</div>
+			
+									
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="dashboardBoxBg mb30 fondo">
+						<div class="profileIntro paraMargin">
+							<h3>Imagen de tu Local y Cancha</h3>
+							<p>Comprueba el local y la cancha que elegiste con nuestras imagenes, anda y demuestra tu toque fino.</p>
+							<div class="row">
+								<div class="form-group  col-sm-12 col-md-12 col-lg-6">
+									<div>
+										<img src="assets/img/listing/coloso.jpg" alt="" class="imgCancha">
 									</div>
 								</div>
-
-								<div class="form-group col-xs-12">
-									<label for="videoUrl">Video URL</label>
-									<input type="text" class="form-control" id="videoUrl" placeholder="http://">
+								<div class="form-group col-sm-12 col-md-12 col-lg-6">
+									<div>
+											<img src="assets/img/listing/coloso-cancha1.jpg" alt="" class="imgCancha">
+									</div>
 								</div>
 							</div>
 						</div>
@@ -256,51 +330,10 @@
 						</div>
 					</div> -->
 					
-					<div class="dashboardBoxBg mb30">
-						<div class="profileIntro paraMargin">
-							<h3>Opening Hours</h3>
-							<p>Example: 10.00am - 5.00pm or 10.00 - 17.00</p>
-							<div class="row">
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="mondayTime">Monday</label>
-									<input type="text" class="form-control" id="mondayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="tuesdayTime">Tuesday</label>
-									<input type="text" class="form-control" id="tuesdayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="wednesdayTime">Wednesday</label>
-									<input type="text" class="form-control" id="wednesdayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="thrusdayTime">Thrusday</label>
-									<input type="text" class="form-control" id="thrusdayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="fridayTime">Friday</label>
-									<input type="text" class="form-control" id="fridayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="saturdayTime">Saturday</label>
-									<input type="text" class="form-control" id="saturdayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="sundayTime">Sunday</label>
-									<input type="text" class="form-control" id="sundayTime" placeholder="Closed">
-								</div>
-							</div>
-						</div>
-					</div>
+					
 
 					<div class="form-footer text-center">
-						<button type="submit" class="btn-submit">Submit</button>
+						<button type="submit" class="btn-submit">Registrar</button>
 					</div>
 				</form>
 			</div>
@@ -321,5 +354,4 @@
     </footer>
 </div>
   
-
 
