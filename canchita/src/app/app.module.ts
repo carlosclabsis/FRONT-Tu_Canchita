@@ -12,7 +12,11 @@ import { ReservasComponent } from './components/reservas/reservas.component';
 import { MensajesComponent } from './components/mensajes/mensajes.component';
 import { NuevaReservaComponent } from './components/nueva-reserva/nueva-reserva.component';
 
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
+import { AgmCoreModule } from '@agm/core';
+import { MapaComponent } from './components/mapa/mapa.component';
 
 
 @NgModule({
@@ -24,11 +28,18 @@ import { NuevaReservaComponent } from './components/nueva-reserva/nueva-reserva.
     ReservasComponent,
     MensajesComponent,
     NuevaReservaComponent,
+    MapaComponent,
   ],
   imports: [
     BrowserModule,
     routing,
     HttpClientModule,
+    BrowserModule,
+    CommonModule,
+    FormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAmSnVsm-cvVZ26BEwCrYhbaWCZuRqWdXY'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

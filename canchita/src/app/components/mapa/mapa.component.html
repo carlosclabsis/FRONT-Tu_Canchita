@@ -1,0 +1,8 @@
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<agm-map [latitude]="lat" [longitude]="lng" [styles]="styles" [zoom]="13">
+  <agm-marker *ngFor="let local of locales" [latitude]="local.local_lat" [longitude]="local.local_lng">
+   [latitude]="lat" [longitude]="lng"
+  </agm-marker>
+
+</agm-map>

@@ -8,6 +8,7 @@ import { ConcurridosComponent} from './components/concurridos/concurridos.compon
 import { ReservasComponent} from './components/reservas/reservas.component';
 import { MensajesComponent} from './components/mensajes/mensajes.component';
 import { NuevaReservaComponent} from './components/nueva-reserva/nueva-reserva.component';
+import {MapaComponent} from './components/mapa/mapa.component';
 
 
 
