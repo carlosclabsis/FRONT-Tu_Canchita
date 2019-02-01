@@ -9,6 +9,7 @@ import { ReservasComponent} from './components/reservas/reservas.component';
 import { MensajesComponent} from './components/mensajes/mensajes.component';
 import { NuevaReservaComponent} from './components/nueva-reserva/nueva-reserva.component';
 import {MapaComponent} from './components/mapa/mapa.component';
+import { DetalleComponent} from './components/detalle/detalle.component';
 
 
 
@@ -39,8 +40,8 @@ const appRoutes:Routes = [
         component: NuevaReservaComponent
     },
     {
-        path: 'local/:id',
-        component: NuevaReservaComponent
+        path: 'detalle/:id',
+        component: DetalleComponent
     },
 
 ]

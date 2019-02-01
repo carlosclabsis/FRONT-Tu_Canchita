@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AgmCoreModule } from '@agm/core';
 import { MapaComponent } from './components/mapa/mapa.component';
+import { DetalleComponent } from './components/detalle/detalle.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { MapaComponent } from './components/mapa/mapa.component';
     MensajesComponent,
     NuevaReservaComponent,
     MapaComponent,
+    DetalleComponent,
   ],
   imports: [
     BrowserModule,
