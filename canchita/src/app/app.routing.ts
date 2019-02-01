@@ -37,7 +37,12 @@ const appRoutes:Routes = [
     {
         path: 'nueva-reserva',
         component: NuevaReservaComponent
-    }
+    },
+    {
+        path: 'local/:id',
+        component: NuevaReservaComponent
+    },
+
 ]
 
 export const appRoutingProviders: any[] = [];    // SE IMPORTA DESDE MODULE

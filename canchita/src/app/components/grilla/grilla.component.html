@@ -69,7 +69,8 @@
 					</ul>
 				</div>
 				<div class="row">
-					<div class="col-sm-4 col-xs-12">
+          <!-- For para mostrar locales -->
+					<div *ngFor="let local of Locales" class="col-sm-4 col-xs-12" >
 						<div class="thingsBox thinsSpace">
 							<div class="thingsImage">
 								<img src="assets/img/listing/listing-4.jpg" alt="Image things">
@@ -81,210 +82,20 @@
 										<li><i class="fa fa-star" aria-hidden="true"></i></li>
 										<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
 									</ul>
-									<a href="listing-details-right.html"><h2>Think Coffee <i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
-									<p>215 Terry Lane, New York</p>
+									<a [routerLink]="['/concurridos']"><h2>{{local.local_direccion}} <i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
+                  <p>{{local.local_descripcion}}</p>
+                  <hr>
 								</div>
 							</div>
 							<div class="thingsCaption ">
 								<ul class="list-inline captionItem">
-									<li><i class="fa fa-heart-o" aria-hidden="true"></i> 8 k</li>
-									<li><a href="listings-half-screen-map-grid.html">Eat & Drink</a></li>
+									<li><i class="fa fa-heart-o" aria-hidden="true"></i> Hora Apertura: {{local.local_hora_apertura}}</li>
+									<li><a href="listings-half-screen-map-grid.html">Reservar</a></li>
 								</ul>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-4 col-xs-12">
-						<div class="thingsBox thinsSpace">
-							<div class="thingsImage">
-								<img src="assets/img/listing/listing-5.jpg" alt="Image things">
-								<div class="thingsMask">
-									<ul class="list-inline rating">
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									</ul>
-									<a href="listing-details-right.html"><h2>Burger House</h2></a>
-									<p>2726 Shinn Street, New York</p>
-								</div>
-							</div>
-							<div class="thingsCaption ">
-								<ul class="list-inline captionItem">
-									<li><i class="fa fa-heart-o" aria-hidden="true"></i> 9.2 k</li>
-									<li><a href="listings-half-screen-map-grid.html">Eat & Drink</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 col-xs-12">
-						<div class="thingsBox thinsSpace">
-							<div class="thingsImage">
-								<img src="assets/img/listing/listing-10.jpg" alt="Image things">
-								<div class="thingsMask">
-									<ul class="list-inline rating">
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									</ul>
-									<a href="listing-details-right.html"><h2>Tom's Restaurant<i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
-									<p>964 School Street, New York</p>
-								</div>
-							</div>
-							<div class="thingsCaption ">
-								<ul class="list-inline captionItem">
-									<li><i class="fa fa-heart-o" aria-hidden="true"></i> 9.5 k</li>
-									<li><a href="listings-half-screen-map-grid.html">Eat & Drink</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 col-xs-12">
-						<div class="thingsBox thinsSpace">
-							<div class="thingsImage">
-								<img src="assets/img/listing/listing-7.jpg" alt="Image things">
-								<div class="thingsMask">
-									<ul class="list-inline rating">
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									</ul>
-									<a href="listing-details-right.html"><h2>Sticky Band <i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
-									<p>Bishop Avenue, New York</p>
-								</div>
-							</div>
-							<div class="thingsCaption ">
-								<ul class="list-inline captionItem">
-									<li><i class="fa fa-heart-o" aria-hidden="true"></i> 596</li>
-									<li><a href="listings-half-screen-map-grid.html">Events</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 col-xs-12">
-						<div class="thingsBox thinsSpace">
-							<div class="thingsImage">
-								<img src="assets/img/listing/listing-8.jpg" alt="Image things">
-								<div class="thingsMask">
-									<ul class="list-inline rating">
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									</ul>
-									<a href="listing-details-right.html"><h2>Hotel Govendor</h2></a>
-									<p>778 Country Street, New York</p>
-								</div>
-							</div>
-							<div class="thingsCaption ">
-								<ul class="list-inline captionItem">
-									<li><i class="fa fa-heart-o" aria-hidden="true"></i> 5k</li>
-									<li><a href="listings-half-screen-map-grid.html">Hotels</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 col-xs-12">
-						<div class="thingsBox thinsSpace">
-							<div class="thingsImage">
-								<img src="assets/img/listing/listing-9.jpg" alt="Image things">
-								<div class="thingsMask">
-									<ul class="list-inline rating">
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									</ul>
-									<a href="listing-details-right.html"><h2>The Mayfair Hotel <i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
-									<p>242 W 49th St, New York</p>
-								</div>
-							</div>
-							<div class="thingsCaption ">
-								<ul class="list-inline captionItem">
-									<li><i class="fa fa-heart-o" aria-hidden="true"></i> 3k</li>
-									<li><a href="listings-half-screen-map-grid.html">Hotel</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 col-xs-12">
-						<div class="thingsBox thinsSpace">
-							<div class="thingsImage">
-								<img src="assets/img/listing/listing-10.jpg" alt="Image things">
-								<div class="thingsMask">
-									<ul class="list-inline rating">
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									</ul>
-									<a href="listing-details-right.html"><h2>Water Grill</h2></a>
-									<p>31 Union Square, New York</p>
-								</div>
-							</div>
-							<div class="thingsCaption ">
-								<ul class="list-inline captionItem">
-									<li><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</li>
-									<li><a href="listings-half-screen-map-grid.html"> Eat & Drink</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 col-xs-12">
-						<div class="thingsBox thinsSpace">
-							<div class="thingsImage">
-								<img src="assets/img/listing/listing-11.jpg" alt="Image things">
-								<div class="thingsMask">
-									<ul class="list-inline rating">
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									</ul>
-									<a href="listing-details-right.html"><h2>John F. Kennedy Airport</h2></a>
-									<p>Queens, NY 11430, new York</p>
-								</div>
-							</div>
-							<div class="thingsCaption ">
-								<ul class="list-inline captionItem">
-									<li><i class="fa fa-heart-o" aria-hidden="true"></i> 15 k</li>
-									<li><a href="listings-half-screen-map-grid.html">Others</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 col-xs-12">
-						<div class="thingsBox thinsSpace">
-							<div class="thingsImage">
-								<img src="assets/img/listing/listing-2.jpg" alt="Image things">
-								<div class="thingsMask">
-									<ul class="list-inline rating">
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									</ul>
-									<a href="listing-details-right.html"><h2>The City Theater <i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
-									<p>10 Bay Street Toronto Ontario Canada</p>
-								</div>
-							</div>
-							<div class="thingsCaption ">
-								<ul class="list-inline captionItem">
-									<li><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</li>
-									<li><a href="listings-half-screen-map-grid.html">Others</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
+          </div>
+          <!-- fin For -->
 				</div>
 				<div class="paginationCommon blogPagination categoryPagination">
 					<nav aria-label="Page navigation">

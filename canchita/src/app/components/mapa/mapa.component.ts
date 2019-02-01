@@ -7,6 +7,9 @@ import {Local} from '../../models/Local';
   styleUrls: ['./mapa.component.css']
 })
 export class MapaComponent implements OnInit {
+    icon = {
+        url: "./assets/Recurso4.png"
+    }
   title: string = 'My first AGM project';
   lat = -16.4302712;
   lng = -71.5192881;
