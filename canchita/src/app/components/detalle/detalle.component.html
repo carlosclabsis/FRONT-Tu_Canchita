@@ -8,8 +8,9 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="listingTitleArea">
-					<h2>{{local.local_nombre}}</h2>
-					<p>1150 Queen Street West Toronto <br>Ontario M6J 1J3, Canada</p>
+					<h1>{{local.localNombre}}</h1>
+					<h2>{{local.localNombre}}</h2>
+					<p>{{local.localDescripcion}} <br>{{local.localDireccion}}</p>
 					<div class="listingReview">
 						<ul class="list-inline rating">
 							<li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -33,10 +34,10 @@
 <!-- LISTINGS DETAILS IMAGE SECTION -->
 <section class="clearfix paddingAdjustTopBottom">
 	<ul class="list-inline listingImage">
-		<li><img src="assets/img/listing/listing-details-1.jpg" alt="Image Listing" class="img-responsive"></li>
-		<li><img src="assets/img/listing/listing-details-2.jpg" alt="Image Listing" class="img-responsive"></li>
-		<li><img src="assets/img/listing/listing-details-3.jpg" alt="Image Listing" class="img-responsive"></li>
-		<li><img src="assets/img/listing/listing-details-4.jpg" alt="Image Listing" class="img-responsive"></li>
+		<li><img src="assets/img/listing/canchita1.1.jpg" width="250" height="250" alt="Image Listing" class="img-responsive"></li>
+		<li><img src="assets/img/listing/canchita1.2.jpg" width="250" height="250" alt="Image Listing" class="img-responsive"></li>
+		<li><img src="assets/img/listing/canchita1.3.jpg" width="250" height="250" alt="Image Listing" class="img-responsive"></li>
+		<li><img src="assets/img/listing/canchita1.4.jpg" width="250" height="250" alt="Image Listing" class="img-responsive"></li>
 	</ul>
 </section>
 
@@ -148,16 +149,16 @@
 					<div id="map" style="position:relative; margin: 0;padding: 0;height: 538px; max-width: none;"></div>
 				</div>
 				<div class="listSidebar">
-					<h3>Location</h3>
+					<h3>Ubicación</h3>
 					<div class="contactInfo">
 						<ul class="list-unstyled list-address">
 							<li>
 								<i class="fa fa-map-marker" aria-hidden="true"></i>
-								16/14 Babor Road, Mohammad pur <br> Dhaka, Bangladesh
+								{{local.localDireccion}} 
 							</li>
 							<li>
 								<i class="fa fa-phone" aria-hidden="true"></i>
-								+55 654 545 122 <br> +55 654 545 123
+								{{local.localTelefono}}
 							</li>
 							<li>
 								<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -167,35 +168,35 @@
 					</div>
 				</div>
 				<div class="listSidebar">
-					<h3>Opening Hours</h3>
+					<h3>Horarios de Atención</h3>
 					<ul class="list-unstyled sidebarList">
 						<li>
-							<span class="pull-left">Monday</span>
-							<span class="pull-right">08.00am - 05.00pm</span>
+							<span class="pull-left">Lunes</span>
+							<span class="pull-right">{{local.localHoraApertura}} - {{local.localHoraCierre}}</span>
 						</li>
 						<li>
-							<span class="pull-left">Tuesday</span>
-							<span class="pull-right">08.00am - 05.00pm</span>
+							<span class="pull-left">Martes</span>
+							<span class="pull-right">{{local.localHoraApertura}} - {{local.localHoraCierre}}</span>
 						</li>
 						<li>
-							<span class="pull-left">Wednesday</span>
-							<span class="pull-right">08.00am - 05.00pm</span>
+							<span class="pull-left">Miércoles</span>
+							<span class="pull-right">{{local.localHoraApertura}} - {{local.localHoraCierre}}</span>
 						</li>
 						<li>
-							<span class="pull-left">Thrusday</span>
-							<span class="pull-right">08.00am - 05.00pm</span>
+							<span class="pull-left">Jueves</span>
+							<span class="pull-right">{{local.localHoraApertura}} - {{local.localHoraCierre}}</span>
 						</li>
 						<li>
-							<span class="pull-left">Friday</span>
-							<span class="pull-right">08.00am - 05.00pm</span>
+							<span class="pull-left">Viernes</span>
+							<span class="pull-right">{{local.localHoraApertura}} - {{local.localHoraCierre}}</span>
 						</li>
 						<li>
-							<span class="pull-left">Saturday</span>
-							<span class="pull-right"><a href="#">Closed</a></span>
+							<span class="pull-left">Sábado</span>
+							<span class="pull-right">{{local.localHoraApertura}} - {{local.localHoraCierre}}</span>
 						</li>
 						<li>
-							<span class="pull-left">Sunday</span>
-							<span class="pull-right"><a href="#">Closed</a></span>
+							<span class="pull-left">Domingo</span>
+							<span class="pull-right">{{local.localHoraApertura}} - {{local.localHoraCierre}}</span>
 						</li>
 					</ul>
 				</div>
