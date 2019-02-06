@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {Local} from '../models/Local';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +10,7 @@ import {Local} from '../models/Local';
 
 
 export class LocalService {
+  /*
   LOCALES: Local[]=[
       {
         local_id:1,
@@ -34,12 +37,27 @@ export class LocalService {
         local_lng:-71.5232179
       }
 
-  ];
-  constructor() {
+  ];*/
+  constructor(private _http: HttpClient) {
 
   }
 
-  getLocales(){
-    return (this.LOCALES);
+  getLocales():Observable<any>{
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+
+    let misHeaders = new HttpHeaders()
+    misHeaders.append('Content-Type', 'application/json');
+  
+    return this._http.get("https://localhost:44345/api/Local",{headers:misHeaders});
+    //return (this.LOCALES);
+  }
+  getLocalById(id:string):Observable<any>{
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+
+    let misHeaders = new HttpHeaders()
+    misHeaders.append('Content-Type', 'application/json');
+    return this._http.get("https://localhost:44345/api/Local/"+id,{headers:misHeaders});
   }
 }
