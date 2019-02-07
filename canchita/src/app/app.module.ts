@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
 import { MapaComponent } from './components/mapa/mapa.component';
 import { DetalleComponent } from './components/detalle/detalle.component';
+import { CanchaComponent } from './components/cancha/cancha.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { DetalleComponent } from './components/detalle/detalle.component';
     NuevaReservaComponent,
     MapaComponent,
     DetalleComponent,
+    CanchaComponent,
   ],
   imports: [
     BrowserModule,

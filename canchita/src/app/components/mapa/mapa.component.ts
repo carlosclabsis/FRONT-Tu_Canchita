@@ -4,7 +4,8 @@ import {Local} from '../../models/Local';
 @Component({
   selector: 'app-mapa',
   templateUrl: './mapa.component.html',
-  styleUrls: ['./mapa.component.css']
+  styleUrls: ['./mapa.component.css'],
+  providers:[LocalService]
 })
 export class MapaComponent implements OnInit {
     icon = {
@@ -306,12 +307,34 @@ export class MapaComponent implements OnInit {
                     ]
                 }
               ];
-  locales:Local[] = [];
+  public locales:Local[] = [];
 
   constructor(private _sLocal:LocalService) {
 
   }
   ngOnInit() {
-    this.locales = this._sLocal.getLocales();
+    this.getLocales();
   }
+
+  public getLocales(){
+    this._sLocal.getLocales().subscribe(
+      response=>{
+        console.log(response);
+        
+        for (let i=0;i<response.length; i++){
+
+          //this.aux.push(response.locales[i]);
+          this.locales.push(response[i]);
+          /*if(i==response.locales.length-1){
+            this.Locales.push(this.aux);
+          }*/
+        }
+        console.log("hello world");
+        console.log(this.locales);
+      },
+      error=>{
+        console.log(error);
+      }
+    )
+    }
 }

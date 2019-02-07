@@ -10,6 +10,7 @@ import { MensajesComponent} from './components/mensajes/mensajes.component';
 import { NuevaReservaComponent} from './components/nueva-reserva/nueva-reserva.component';
 import {MapaComponent} from './components/mapa/mapa.component';
 import { DetalleComponent} from './components/detalle/detalle.component';
+import { CanchaComponent } from './components/cancha/cancha.component';
 
 
 
@@ -17,7 +18,7 @@ import { DetalleComponent} from './components/detalle/detalle.component';
 const appRoutes:Routes = [
     {
         path: '',
-        component: GrillaComponent
+        component: GrillaComponent,
     },
     {
         path: 'lista',
@@ -43,6 +44,11 @@ const appRoutes:Routes = [
         path: 'detalle/:id',
         component: DetalleComponent
     },
+    {
+        path: 'detalle/:id/cancha/:id',
+        component: CanchaComponent
+    },
+
 
 ]
 
